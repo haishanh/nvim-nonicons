@@ -209,6 +209,7 @@ local M = {
   ["strikethrough"] = "61904",
   ["sun"] = "61905",
   ["swift"] = "61906",
+  ["svelte"] = "61992",
   ["sync"] = "61907",
   ["tag"] = "61908",
   ["tasklist"] = "61909",

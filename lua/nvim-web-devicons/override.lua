@@ -5,6 +5,8 @@ local function get(name)
   return vim.fn.nr2char(icons[name])
 end
 
+-- https://github.com/kyazdani42/nvim-web-devicons/blob/master/lua/nvim-web-devicons.lua
+
 devicons.set_icon {
   -- ["gruntfile"] = {
   --   icon = "",
@@ -120,6 +122,12 @@ devicons.set_icon {
     icon = get("vim"),
     color = "#019833",
     name = "Gvimrc"
+  },
+  [".npmrc"] = {
+    icon = get("npm"),
+    color = "#E8274B",
+    cterm_color = "161",
+    name = "NPMrc",
   },
   [".npmignore"] = {
     icon = get("npm"),
@@ -290,6 +298,12 @@ devicons.set_icon {
     icon = get("docker"),
     color = "#384d54",
     name = "Dockerfile"
+  },
+  [".env"] = {
+    icon = get("cpu"),
+    color = "#faf743",
+    cterm_color = "226",
+    name = "Env",
   },
   -- ["dump"] = {
   --   icon = "",
@@ -561,6 +575,16 @@ devicons.set_icon {
     color = "#E8274B",
     name = "NodeModules"
   },
+  ['package.json'] = {
+    icon = get("npm"),
+    color = "#e8274b",
+    name = "PackageJson"
+  },
+  ['package-lock.json'] = {
+    icon = get("npm"),
+    color = "#7a0d21",
+    name = "PackageLockJson"
+  },
   ["php"] = {
     icon = get("php"),
     color = "#a074c4",
@@ -676,11 +700,11 @@ devicons.set_icon {
     color = "#cc3e44",
     name = "Scala"
   },
-  -- ["scss"] = {
-  --   icon = "",
-  --   color = "#f55385",
-  --   name = "Scss"
-  -- },
+  ["scss"] = {
+    icon = get("css"),
+    color = "#f55385",
+    name = "Scss"
+  },
   ["sh"] = {
     icon = get("terminal"),
     color = "#4d5a5e",
@@ -711,6 +735,13 @@ devicons.set_icon {
   --   color = "#854CC7",
   --   name = "Suo"
   -- },
+  --
+  ["svelte"] = {
+    icon = get("svelte"),
+    color = "#ff3e00",
+    cterm_color = "202",
+    name = "Svelte",
+  },
   ["swift"] = {
     icon = get("swift"),
     color = "#e37933",
