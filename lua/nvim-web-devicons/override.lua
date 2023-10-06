@@ -299,6 +299,11 @@ devicons.set_icon {
     color = "#384d54",
     name = "Dockerfile"
   },
+  [".dockerignore"] = {
+    icon = get("docker"),
+    color = "#384d54",
+    name = "Dockerfile"
+  },
   [".env"] = {
     icon = get("cpu"),
     color = "#faf743",
@@ -545,11 +550,12 @@ devicons.set_icon {
   --   color = "#a074c4",
   --   name = "MixLock"
   -- },
-  -- ["mjs"] = {
-  --   icon = "",
-  --   color = "#f1e05a",
-  --   name = "Mjs"
-  -- },
+  ["mjs"] = {
+    icon = get("javascript"),
+    color = "#f1e05a",
+    cterm_color = "221",
+    name = "Mjs",
+  },
   -- ["ml"] = {
   --   icon = "λ",
   --   color = "#e37933",
@@ -757,10 +763,31 @@ devicons.set_icon {
   --   color = "#3D6117",
   --   name = "Tex"
   -- },
+  ["txt"] = {
+    icon = get("file"),
+    color = "#89e051",
+    cterm_color = "113",
+    name = "Txt",
+  },
+  [".log"] = {
+    icon = get("docker"),
+    color = "#384d54",
+    name = "Dockerfile"
+  },
   ["toml"] = {
     icon = get("toml"),
     color = "#6d8086",
     name = "Toml"
+  },
+  ["test.ts"] = {
+    icon = get("typescript"),
+    color = "#384d54",
+    name = "TestTs"
+  },
+  ["spec.ts"] = {
+    icon = get("typescript"),
+    color = "#384d54",
+    name = "SpecTs"
   },
   ["ts"] = {
     icon = get("typescript"),
